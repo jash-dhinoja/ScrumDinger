@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @State private var data = DailyScrum.Data()
+    @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
     var body: some View {
         Form{
@@ -21,6 +21,7 @@ struct DetailEditView: View {
                     Spacer()
                     Text("\(Int(data.lengthInMinutes)) Minutes")
                 }
+                ThemePicker(selection: $data.theme)
             }
             Section(header: Text("Attendees")){
                 ForEach(data.attendees) { attendee in
@@ -49,6 +50,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
     }
 }
