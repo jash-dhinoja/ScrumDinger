@@ -14,6 +14,7 @@
 		15AF12F429B8EDF80089E99F /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF12F329B8EDF80089E99F /* MeetingFooterView.swift */; };
 		15AF12FA29B947980089E99F /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15AF12F929B947980089E99F /* ding.wav */; };
 		15AF12FC29B94EF30089E99F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF12FB29B94EF30089E99F /* History.swift */; };
+		15AF12FF29BABCE40089E99F /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF12FE29BABCE40089E99F /* ScrumStore.swift */; };
 		15E4575C29B640BE006B3C81 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4575B29B640BE006B3C81 /* DetailEditView.swift */; };
 		15E4575E29B7A38C006B3C81 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4575D29B7A38C006B3C81 /* ThemeView.swift */; };
 		15E4576029B7A4D3006B3C81 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4575F29B7A4D3006B3C81 /* ThemePicker.swift */; };
@@ -37,6 +38,7 @@
 		15AF12F329B8EDF80089E99F /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		15AF12F929B947980089E99F /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		15AF12FB29B94EF30089E99F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		15AF12FE29BABCE40089E99F /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		15E4575B29B640BE006B3C81 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		15E4575D29B7A38C006B3C81 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		15E4575F29B7A4D3006B3C81 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
@@ -83,21 +85,21 @@
 		15F6A7AF29AFC5AE000454FD /* ScrumDingerApple */ = {
 			isa = PBXGroup;
 			children = (
+				15F6A7B629AFC5AF000454FD /* Preview Content */,
+				15F6A7BE29AFCAE1000454FD /* Models */,
+				15F6A7C529AFD38C000454FD /* TrailingIconLabelStyle.swift */,
+				15F6A7B029AFC5AE000454FD /* ScrumDingerAppleApp.swift */,
+				15F6A7C729B12231000454FD /* ScrumView.swift */,
+				15F6A7C329AFCC7D000454FD /* CardView.swift */,
+				15F6A7C929B13AD0000454FD /* DetailView.swift */,
+				15E4575B29B640BE006B3C81 /* DetailEditView.swift */,
 				15E4575F29B7A4D3006B3C81 /* ThemePicker.swift */,
 				15E4575D29B7A38C006B3C81 /* ThemeView.swift */,
-				15E4575B29B640BE006B3C81 /* DetailEditView.swift */,
-				15F6A7BE29AFCAE1000454FD /* Models */,
-				15F6A7B029AFC5AE000454FD /* ScrumDingerAppleApp.swift */,
 				15F6A7B229AFC5AE000454FD /* MeetingView.swift */,
-				15F6A7B429AFC5AF000454FD /* Assets.xcassets */,
-				15F6A7B629AFC5AF000454FD /* Preview Content */,
-				15F6A7C329AFCC7D000454FD /* CardView.swift */,
-				15F6A7C529AFD38C000454FD /* TrailingIconLabelStyle.swift */,
-				15F6A7C729B12231000454FD /* ScrumView.swift */,
-				15F6A7C929B13AD0000454FD /* DetailView.swift */,
 				15AF12F129B8EACB0089E99F /* ScrumProgressViewStyle.swift */,
-				15AF12F329B8EDF80089E99F /* MeetingFooterView.swift */,
 				15AF12EB29B8E7400089E99F /* MeetingHeaderView.swift */,
+				15AF12F329B8EDF80089E99F /* MeetingFooterView.swift */,
+				15F6A7B429AFC5AF000454FD /* Assets.xcassets */,
 				15AF12F929B947980089E99F /* ding.wav */,
 			);
 			path = ScrumDingerApple;
@@ -119,6 +121,7 @@
 				15F6A7BF29AFCAF0000454FD /* Theme.swift */,
 				15F6A7C129AFCB92000454FD /* DailyScrum.swift */,
 				15AF12FB29B94EF30089E99F /* History.swift */,
+				15AF12FE29BABCE40089E99F /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				15E4576029B7A4D3006B3C81 /* ThemePicker.swift in Sources */,
 				15F6A7C229AFCB92000454FD /* DailyScrum.swift in Sources */,
 				15AF12F029B8EABE0089E99F /* ScrumTimer.swift in Sources */,
+				15AF12FF29BABCE40089E99F /* ScrumStore.swift in Sources */,
 				15F6A7CA29B13AD0000454FD /* DetailView.swift in Sources */,
 				15AF12EF29B8EABE0089E99F /* AVPlayer+Ding.swift in Sources */,
 				15AF12F429B8EDF80089E99F /* MeetingFooterView.swift in Sources */,
@@ -339,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrumDingerApple/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -368,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrumDingerApple/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
